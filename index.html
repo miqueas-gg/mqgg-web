@@ -24,7 +24,7 @@
     </head>
     <body>
       <!-- NavBar -->
-      <nav class="navbar navbar-expand-md bg-body-tertiary navbar-light">
+      <nav class="navbar navbar-expand-md bg-body-tertiary navbar-light fixed-top">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,19 +35,19 @@
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="#">About me</a>
+                <a class="nav-link" href="#about">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Expertise</a>
+                <a class="nav-link" href="#expertise">Expertise</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testemonials</a>
+                <a class="nav-link" href="#testimonials">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -55,7 +55,7 @@
       </nav>
 
       <!-- Hero -->
-      <section class = "hero align-items-stretch">
+      <section  class="hero align-items-stretch">
         <div class = "hero-principal d-flex flex-column justify-content-center align-items-center">
           <img src="./src/img/avatar.jpeg" alt="Miqueas García González" class="profile-img">
           <h1>M. García González</h1>
@@ -67,7 +67,7 @@
       </section>
 
        <!-- About me -->
-      <section class = "about-me dark-section">
+      <section id="about" class = "about-me semi-dark-section">
         <div class = "container">
           <h2 class = "title-section" >Bespoke Software Development</h2>
           <p class = "text-section" >As a software engineer, I take pride in crafting tailored solutions that precisely meet users' needs. Software should not be a one-size-fits-all product but rather a carefully designed piece, built with attention to detail and a deep understanding of its purpose.</p>  
@@ -76,14 +76,21 @@
       </section>
 
       <!-- Expertise -->
-      <section class = "expertise white-section">
+      <section id="expertise" class = "expertise white-section">
         <div class = "container text-center">
           <div class = "row">
             <!-- Academic Background -->
-            <div class = "column col-12 col-md-4">
+            <div class="column col-12 col-md-6">
               <i class="bi bi-book"></i>
-              <p class = "expertise-title">Academic Background</p>
-              <p>Texto de tal y cual</p>
+              <p class="expertise-title">Academic Background</p>
+              <p>My academic journey has been focused on software engineering, artificial intelligence, and system architecture.</p>
+              <ul class="academic-list">
+                <li><strong>Master’s in Applied Artificial Intelligence</strong> – Universidad Europea</li>
+                <li><strong>Bachelor’s Degree in Computer Engineering</strong> (Software Architecture specialization) – Universidad de La Laguna</li>
+                <li><strong>Advanced Technical Diploma in Web Application Development</strong> – IES Puerto de la Cruz - Telesforo Bravo</li>
+                <li><strong>Advanced Technical Diploma in Network System Administration</strong> – IES Puerto de la Cruz - Telesforo Bravo</li>
+                <li><strong>Advanced Technical Diploma in Multi-platform Application Development</strong> – Centro Internacional Politécnico Tenerife</li>
+              </ul>
               <div class="badges-container">
                 <span class="badge bg-primary">AI</span>
                 <span class="badge bg-primary">Big Data</span>
@@ -91,20 +98,20 @@
                 <span class="badge bg-primary">Engineering</span>
               </div>
             </div>
-            <!-- Software development -->
-            <div class = "column col-12 col-md-4">
+            <!-- Software Development -->
+            <div class="column col-12 col-md-6">
               <i class="bi bi-laptop"></i>
-              <p class = "expertise-title">Software Development</p>
-              <p>Texto de tal y cual</p>
+              <p class="expertise-title">Software Development</p>
+              <p>I specialize in designing and building scalable software solutions, with a strong focus on clean architecture, performance, and maintainability. My work spans from backend development and APIs to AI integration and data processing pipelines, leveraging modern tools and frameworks to deliver reliable and efficient systems.</p>
               <div class="badges-container">
                 <span class="badge bg-primary">Python</span>
                 <span class="badge bg-primary">Java</span>
-                <span class="badge bg-primary">Springboot</span>
-                <span class="badge bg-primary">HuggingFace</span>
+                <span class="badge bg-primary">Spring Boot</span>
+                <span class="badge bg-primary">Hugging Face</span>
               </div>
             </div>
             <!-- Posts -->
-            <div class = "column col-12 col-md-4">
+            <!-- <div class = "column col-12 col-md-4">
               <i class="bi bi-stickies"></i>
               <p class = "expertise-title">Posts</p>
               <p>Texto de tal y cual</p>
@@ -112,12 +119,12 @@
                 <span class="badge bg-primary">Linkedin</span>
                 <span class="badge bg-primary">Twitter</span>
                 <span class="badge bg-primary">Blogs</span>
-            </div>
+            </div> -->
         </div>
       </section>
 
       <!-- Highlighted Projects -->
-      <section class="projects white-section d-flex flex-column">
+      <section id="projects" class="projects white-section d-flex flex-column">
         <h2 class = "title-section black-text">Projects</h2>
         <h3 class = "description-section">Showcasing My Most Noteworthy Work and Contributions</h3>
         <!-- Gallery -->
@@ -143,9 +150,68 @@
       <!-- Posts -->
 
       <!-- Testemonials -->
+      <section id="testimonials" class="testimonials white-section">
+        <h2 class="title-section">Testimonials</h2>
+        <h3 class="description-section">Here are a few words from professionals I’ve had the pleasure to work with.</h3>
+        <!-- Carousel -->
+        <div id="carouselTestimonials" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonio 1"></button>
+            <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="1" aria-label="Testimonio 2"></button>
+            <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="2" aria-label="Testimonio 3"></button>
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container text-center">
+                <img class="testimonial-image rounded-circle" src="src/img/testimonial_1.jpg" alt="Client photo">
+                <p class="testimonial-text">“Miqueas brought structure and clarity to our data architecture. His clean code and insightful design choices saved us countless hours.”</p>
+                <div class="testimonial-info">
+                  <p class="bp-name">Jhon Davis</p>
+                  <p class="bp-position">Lead Data Engineer at Quantix Labs</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container text-center">
+                <img class="testimonial-image rounded-circle" src="src/img/testimonial_2.jpg" alt="Client photo">
+                <p class="testimonial-text">“Working with Miqueas was a game changer. His ability to translate complex requirements into scalable, maintainable solutions is second to none.”</p>
+                <div class="testimonial-info">
+                  <p class="bp-name">Laura Smith</p>
+                  <p class="bp-position">CTO at Horizon HealthTech</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container text-center">
+                <img class="testimonial-image rounded-circle" src="src/img/testimonial_3.jpg" alt="Client photo">
+                <p class="testimonial-text">“Rarely do you find someone who balances technical depth with real-world pragmatism. Miqueas is one of those rare professionals.”</p>
+                <div class="testimonial-info">
+                  <p class="bp-name">Andrew Banker</p>
+                  <p class="bp-position">Software Architect at NeoCore Solutions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
 
       <!-- Contact -->
-       <section class = "contact dark-section">
+       <section id="contact" class = "contact dark-section">
         <div class = "container">
           <div class = "container rectangle text-center d-flex justify-content-evenly">
             <div class = "row">
@@ -169,8 +235,25 @@
        </section>
 
        <!-- Footer -->
-        <footer class = "dark-section d-flex">
+        <footer class = "dark-section d-flex flex-column align-items-center justify-contenc-center">
+          <img class="footer-logo" src="/src/img/dark-logo.png">
+          <p class="footer-text text-center">Bespoke<br>Software Development<br></p>
+          <div class="icons-sns d-flex flex-wrap align-items-center justify-contenc-center">
+          <!-- SNS -->
 
+            <!-- Linkedin -->
+            <a href="https://www.linkedin.com/in/miqueasgg" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/miqueas-gg" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github"></i>
+            </a>
+
+          </div>
+
+          <div class="license">Created by Miqueas García González &#169;</div>
         </footer>
       
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

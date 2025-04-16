@@ -16,6 +16,7 @@
 /* General */ 
 body{
   background-color: white;
+  padding-top: 70px;
 }
 
 section{
@@ -50,9 +51,12 @@ h1{
   color: #584e4e;
 }
 
-.dark-section{
+.semi-dark-section{
   background-color: #dddbff;
   color: #040316;
+}
+.dark-section{
+  background-color: #010104;
 }
 
 .white-section{
@@ -220,6 +224,60 @@ h1{
   position: relative
 }
 
+/* Testimonials */
+
+.testimonials{
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonials .carousel{
+  max-width: 800px;
+}
+
+.carousel-item{
+  height: 500px;
+}
+
+.carousel-item .container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-image{
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonial-text{
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.testimonial-info{
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonial-info p {
+  margin-bottom: 0;
+}
+
+.testimonial-info .bp-name{
+  font-size: 1.2rem;
+}
+
+.testimonial-info .bp-position{
+  font-size: 0.9rem;
+}
+
+
+
 /* Contact */
 .contact .container{
   max-width: 1100px;
@@ -274,4 +332,59 @@ h1{
 .contact button:hover{
   background-color: #fbfbfe;
   color: #040316;
+}
+
+/* footer */
+
+footer{
+  min-height: 500px;
+}
+
+.footer-logo{
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-text{
+  color: #eae9fc;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "Victor Mono", sans-serif, monospace;
+}
+
+.icons-sns a{
+ width: 50px;
+ height: 50px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 2px;
+ margin: 10px;
+ border: 2px solid white;
+ border-radius: 50%;
+ transition: all 0.2s ease-in;
+}
+
+.icons-sns i{
+  color: #eae9fc;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.icons-sns a:hover{
+  background-color: #eae9fc;
+  border: 2px solid #443dff;
+}
+
+.icons-sns a:hover i{
+  color: #040316;
+}
+
+.license{
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
 }
