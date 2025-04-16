@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <!-- Metadata -->
+      <meta charset="UTF-8">
+      <meta name="author" content="Miqueas García González">
+      <meta name="description" content="Portfolio de Miqueas García González, Ingeniero de Software.">
+      <meta name="keywords" content="arquitectura de software, ingeniero de software, data engineer, diseño de software, patrones de arquitectura, hexagonal architecture, vertical slicing, clean architecture, microservicios, sistemas distribuidos, bases de datos, ETL, modelado de datos, big data, machine learning, cloud computing, DevOps, CI/CD, SQL, NoSQL, API REST, GraphQL, Python, Java, Scala, Apache Kafka, AWS, Azure, Google Cloud, desarrollo backend, software escalable, optimización de rendimiento">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <!-- CSS -->
+      <link href="./src/css/style.css" rel="stylesheet">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" href="./src/img/favicon.png">
+      <!-- CDN -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <title>Miqueas GG | Software Engineer</title>
+    </head>
+    <body>
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-md bg-body-tertiary navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+              <img src="./src/img/logo.png" width="50px" alt="Logo" href="./index.html">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Expertise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testemonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <section class = "hero align-items-stretch">
+        <div class = "hero-principal d-flex flex-column justify-content-center align-items-center">
+          <img src="./src/img/avatar.jpeg" alt="Miqueas García González" class="profile-img">
+          <h1>M. García González</h1>
+          <h2>Precision, Integrity, Innovation</h2>
+        </div>
+        <div class = "hero-inferior">
+          <img class = "hero-inferior-img img-fluid" src="./src/img/lower-banner-hero.svg" alt="Lower banner">
+        </div>
+      </section>
+
+       <!-- About me -->
+      <section class = "about-me dark-section">
+        <div class = "container">
+          <h2 class = "title-section" >Bespoke Software Development</h2>
+          <p class = "text-section" >As a software engineer, I take pride in crafting tailored solutions that precisely meet users' needs. Software should not be a one-size-fits-all product but rather a carefully designed piece, built with attention to detail and a deep understanding of its purpose.</p>  
+          <p class = "text-section" >Quality is not merely an aspiration but a fundamental principle guiding my work. Thoughtful design, clean architecture, and maintainability are prioritized to ensure that every solution stands the test of time. Collaboration and refinement are essential, as great software is rarely the result of a single effort but rather the outcome of continuous improvement and shared expertise.</p>            
+        </div>
+      </section>
+
+      <!-- Expertise -->
+      <section class = "expertise white-section">
+        <div class = "container text-center">
+          <div class = "row">
+            <!-- Academic Background -->
+            <div class = "column col-12 col-md-4">
+              <i class="bi bi-book"></i>
+              <p class = "expertise-title">Academic Background</p>
+              <p>Texto de tal y cual</p>
+              <div class="badges-container">
+                <span class="badge bg-primary">AI</span>
+                <span class="badge bg-primary">Big Data</span>
+                <span class="badge bg-primary">Architecture</span>
+                <span class="badge bg-primary">Engineering</span>
+              </div>
+            </div>
+            <!-- Software development -->
+            <div class = "column col-12 col-md-4">
+              <i class="bi bi-laptop"></i>
+              <p class = "expertise-title">Software Development</p>
+              <p>Texto de tal y cual</p>
+              <div class="badges-container">
+                <span class="badge bg-primary">Python</span>
+                <span class="badge bg-primary">Java</span>
+                <span class="badge bg-primary">Springboot</span>
+                <span class="badge bg-primary">HuggingFace</span>
+              </div>
+            </div>
+            <!-- Posts -->
+            <div class = "column col-12 col-md-4">
+              <i class="bi bi-stickies"></i>
+              <p class = "expertise-title">Posts</p>
+              <p>Texto de tal y cual</p>
+              <div class="badges-container">
+                <span class="badge bg-primary">Linkedin</span>
+                <span class="badge bg-primary">Twitter</span>
+                <span class="badge bg-primary">Blogs</span>
+            </div>
+        </div>
+      </section>
+
+      <!-- Highlighted Projects -->
+      <section class="projects white-section d-flex flex-column">
+        <h2 class = "title-section black-text">Projects</h2>
+        <h3 class = "description-section">Showcasing My Most Noteworthy Work and Contributions</h3>
+        <!-- Gallery -->
+         <div class= "container text-center projects-container">
+          <div class = "row">
+            <div class = "col-12 col-md-6 col-lg-4">
+              <div class="project">
+                <img src="./src/img/project1.jpeg" alt="Project 1" class="project-img">
+                <div class = "overlay">
+                  <p>Voice-based virtual assistant for hospital environments</p>
+                  <div class = "container-icons">
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+      </section>
+
+      <!-- Posts -->
+
+      <!-- Testemonials -->
+
+      <!-- Contact -->
+       <section class = "contact dark-section">
+        <div class = "container">
+          <div class = "container rectangle text-center d-flex justify-content-evenly">
+            <div class = "row">
+              <div class="col-12 col-md-4 title-section">
+                Let's Discuss Your Project
+              </div>
+              <div class="col-12 col-md-4">
+                <p class = "description">If you have an idea, a challenge, or a project in mind, let’s talk. I’m always open to discussing new opportunities and crafting tailored solutions that meet your needs.</p>
+              </div>
+              <div class="col-12 col-md-4">
+                <a href="mailto:mqggonzalez@gmail.com">
+                  <button type = "button">
+                    Contact Me
+                    <i class="bi bi-envelope-at"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <!-- Footer -->
+        <footer class = "dark-section d-flex">
+
+        </footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+  </html>

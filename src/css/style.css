@@ -1,0 +1,277 @@
+/* Navbar */
+.navbar{
+  padding: 2rem;
+  background-color: #dddbff;
+}
+
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-collapse a{
+  color: #443dff;
+}
+
+/* General */ 
+body{
+  background-color: white;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-family: "Victor Mono", monospace;
+}
+
+.title-section{
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.text-section{
+  font-size: 1.2rem;
+  padding: 15px 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.description-section{
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.dark-section{
+  background-color: #dddbff;
+  color: #040316;
+}
+
+.white-section{
+  background-color: #fbfbfe;
+  color: #040316
+}
+
+.dark-text{
+  color: #040316;
+}
+
+.white-text{
+  color: #eae9fc;
+}
+
+/* About me */
+.about-me{
+  height: 500px;
+  padding: 10px;
+}
+.about-me .container{
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Responsive */ 
+@media screen and (max-width: 767px) {
+  .navbar-brand{
+    display: none;
+  }
+  
+}
+
+/* Profile image */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Makes it fully rounded */
+  object-fit: cover;  /* Ensures it fills the frame */
+  border: 4px solid #ccc; /* Optional: Adds a subtle border */
+  margin: 20px;
+}
+
+/* Hero */
+
+.hero{
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-img{
+    max-width: 600px;
+  }
+}
+
+.hero-principal{
+  padding: 3rem;
+}
+
+.hero-principal h2{
+  font-size: 1.5rem;
+  color: #615151
+}
+
+/* Expertise */
+.expertise {
+  padding: 40px 40px 60px 40px;
+}
+
+.expertise-title{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.expertise .column {
+  padding: 20px;
+  border: 2px solid #0403164d;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.expertise .column:hover {
+  color: #eae9fc;
+  background-color: #010104;
+}
+
+.expertise i{
+  font-size: 2.5rem;
+  padding: 8px 19px;
+  border-radius: 50%;
+  background-color:#dddbff;
+  color: #443dff
+}
+
+.badges-container{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge{
+  margin: 5px;
+}
+
+/* Projects */
+
+.projects{
+  padding: 40px;
+}
+
+.projects-container{
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.projects img{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.overlay .container-icons {
+  display: flex;
+}
+
+.overlay i {
+  color:#040316;
+  font-size: 60px;
+  margin: 10px;
+}
+.project:hover .overlay{
+  opacity: 1;
+}
+
+.project:hover img{
+  opacity: 0.2;
+}
+
+.project {
+  position: relative
+}
+
+/* Contact */
+.contact .container{
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contact{
+  background-color: #020024;
+}
+
+.contact .rectangle{
+  margin-top: -5rem;
+  background-color: #2f27ce;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px #fbfbfe;
+}
+
+.contact .row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact .description{
+  color: #fbfbfe;
+  font-size: 1.2rem;
+}
+
+.contact button{
+  color:#fbfbfe;
+  font-weight: bold;
+  background-color: #443dff;
+  border: 2px solid #fbfbfe;
+  padding: 1.25em 2em;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact .title-section{
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #fbfbfe;
+}
+
+.contact button i{
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact button:hover{
+  background-color: #fbfbfe;
+  color: #040316;
+}
